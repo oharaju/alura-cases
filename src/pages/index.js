@@ -1,12 +1,12 @@
-import Link from '../components/Link';
+import NextLink from '../components/NextLink';
 
 export default function Home() {
   return (
     <div>
       <h1>Alura Cases- Home</h1>
-      <Link href="/contact">
+      <NextLink href="/contact">
         Ir para FAQ
-      </Link>
+      </NextLink>
     </div>
   )
 }
