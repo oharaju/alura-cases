@@ -10,14 +10,18 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "-": "^0.0.1",
     "@fortawesome/fontawesome-svg-core": "^6.4.0",
     "@fortawesome/free-solid-svg-icons": "^6.4.0",
     "@fortawesome/react-fontawesome": "^0.2.0",
     "eslint": "^7.32.0 || ^8.2.0",
     "eslint-config-next": "13.3.4",
+    "eslint-config-prettier": "^8.8.0",
     "next": "13.3.4",
+    "prettier": "^2.8.8",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "save-dev": "^0.0.1-security"
   },
   "devDependencies": {
     "eslint-config-airbnb": "^19.0.4",
