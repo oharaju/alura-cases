@@ -11,8 +11,11 @@
   },
   "plugins": ["react"],
   "rules": {
+    "react/prop-types": "off",
+    "react/jsx-props-no-spreading": "off",
     "import/no-unresolved": "off",
     "react/react-in-jsx-scope": "off",
-    "jsx-quotes": "off"
+    "jsx-quotes": "off",
+    "object-curly-newline": "off"
   }
 }
