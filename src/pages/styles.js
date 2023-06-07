@@ -48,3 +48,44 @@ export const Subtitle = styled.p`
   line-height: ${theme.lineHeights.medium}px;
   margin-top: ${theme.spacing.xlarge}px;
 `;
+
+export const Form = styled.form`
+  margin-top: 48px;
+`;
+
+export const InputEmail = styled.input`
+  color: ${colors.stamina};
+  font-size: ${theme.fontSizes.medium}px;
+  font-weight: ${theme.fontWeights.regular};
+  padding: ${theme.spacing.xsmall}px ${theme.spacing.medium}px;
+  transition: all 0.2s ease-in-out;
+  outline: 0;
+  box-shadow: 0 5px 7px -5px #11111143;
+  display: block;
+  width: 100%;
+  border: 1px solid #b1b1b1;
+  border-radius: 8px;
+  box-sizing: border-box;
+`;
+
+export const Button = styled.button`
+  background-color: ${colors.primary};
+  color: ${colors.white};
+  font-size: ${theme.fontSizes.medium}px;
+  font-weight: ${theme.fontWeights.regular};
+  border-radius: ${theme.radii.small}px;
+  margin-top: ${theme.spacing.small}px;
+  cursor: pointer;
+  box-shadow: 0 5px 7px -5px #11111143;
+  display: block;
+  outline: 0;
+  width: 100%;
+  border: 1px solid #240754;
+  padding: ${theme.spacing.xsmall}px ${theme.spacing.medium}px;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    background-color: ${colors.primary};
+    opacity: 0.9;
+  }
+`;

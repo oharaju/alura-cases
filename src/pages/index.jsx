@@ -1,7 +1,18 @@
 import { ThemeProvider, FontLoader, Text } from '@gympass/yoga';
 import NextLink from '../components/NextLink';
 // eslint-disable-next-line import/named
-import { Main, Hero, Content, Badge, LinkBadge, MainDescription, Subtitle } from './styles';
+import {
+  Main,
+  Hero,
+  Content,
+  Badge,
+  LinkBadge,
+  MainDescription,
+  Subtitle,
+  InputEmail,
+  Form,
+  Button,
+} from './styles';
 
 export default function Home() {
   return (
@@ -23,11 +34,12 @@ export default function Home() {
               empresas de tecnologia enfrentam!
             </Subtitle>
             <Subtitle>Quer testar antes de todo mundo?</Subtitle>
+
+            <Form>
+              <InputEmail placeholder='Coloque seu email aqui' />
+              <Button type='button'>Cadastrar</Button>
+            </Form>
           </MainDescription>
-          <form>
-            <input placeholder='Coloque seu email aqui' />
-            <button type='button'>Cadastrar</button>
-          </form>
         </Hero>
       </Main>
     </ThemeProvider>
