@@ -17,6 +17,7 @@
     "@fortawesome/free-solid-svg-icons": "^6.4.0",
     "@fortawesome/react-fontawesome": "^0.2.0",
     "@gympass/yoga": "^7.75.1",
+    "@gympass/yoga-helpers": "^1.0.3",
     "@gympass/yoga-system": "^0.11.0",
     "eslint": "^7.32.0 || ^8.2.0",
     "eslint-config-next": "13.3.4",
