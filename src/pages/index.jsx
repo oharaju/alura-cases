@@ -1,5 +1,5 @@
 import { ThemeProvider, FontLoader, Text } from '@gympass/yoga';
-import NextLink from '../components/NextLink';
+import LinkNext from '../components/NextLink';
 // eslint-disable-next-line import/named
 import {
   Main,
@@ -21,10 +21,10 @@ export default function Home() {
       <Main>
         <Hero>
           <Content>
-            <NextLink href='/contact'>
+            <LinkNext href='/contact'>
               <Badge>O que tem de novo?</Badge>
               <LinkBadge>Confira as principais dúvidas</LinkBadge>
-            </NextLink>
+            </LinkNext>
           </Content>
           <MainDescription>
             <Text.H1>Alura Cases</Text.H1>

@@ -17,10 +17,6 @@ export const Content = styled.div`
   margin-top: ${theme.spacing.xhuge}px;
 `;
 
-export const NextLink = styled.a`
-  text-decoration: none;
-`;
-
 export const Badge = styled.span`
   background-color: ${colors.neutral};
   color: ${colors.relax};

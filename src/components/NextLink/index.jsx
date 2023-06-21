@@ -1,11 +1,12 @@
 import NextLink from 'next/link';
+import Link from './styles';
 
-export default function Link({ href, children, ...props }) {
-  return(
+export default function LinkNext({ href, children, ...props }) {
+  return (
     <div>
       <NextLink href={href} passHref legacyBehavior>
-        <a {...props}>{children}</a>
+        <Link {...props}>{children}</Link>
       </NextLink>
     </div>
-  )
+  );
 }
