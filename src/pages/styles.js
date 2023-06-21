@@ -1,5 +1,6 @@
 import { styled } from 'styled-components';
 import { theme } from '@gympass/yoga';
+import { media } from '@gympass/yoga-helpers';
 import colors from '../tokens/colors';
 
 export const Main = styled.div`
@@ -13,8 +14,22 @@ export const Hero = styled.div`
   max-width: 768px;
 `;
 
+export const Logo = styled.img`
+  width: auto;
+  height: 44px;
+`;
+
 export const Content = styled.div`
   margin-top: ${theme.spacing.xhuge}px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+
+  ${media.xs`
+    flex-direction: row;
+    align-items: center;
+  `}
 `;
 
 export const Badge = styled.span`

@@ -4,6 +4,7 @@ import LinkNext from '../components/NextLink';
 import {
   Main,
   Hero,
+  Logo,
   Content,
   Badge,
   LinkBadge,
@@ -20,12 +21,13 @@ export default function Home() {
       <FontLoader />
       <Main>
         <Hero>
-          <Content>
-            <LinkNext href='/contact'>
+          <Logo src="./images/alura-logo.svg" alt='Logo Alura' />
+          <LinkNext href='/contact'>
+            <Content>
               <Badge>O que tem de novo?</Badge>
               <LinkBadge>Confira as principais dúvidas</LinkBadge>
-            </LinkNext>
-          </Content>
+            </Content>
+          </LinkNext>
           <MainDescription>
             <Text.H1>Alura Cases</Text.H1>
             <Subtitle>
@@ -34,7 +36,6 @@ export default function Home() {
               empresas de tecnologia enfrentam!
             </Subtitle>
             <Subtitle>Quer testar antes de todo mundo?</Subtitle>
-
             <Form>
               <InputEmail placeholder='Coloque seu email aqui' />
               <Button type='button'>Cadastrar</Button>
