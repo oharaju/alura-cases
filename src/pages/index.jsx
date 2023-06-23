@@ -13,6 +13,8 @@ import {
   InputEmail,
   Form,
   Button,
+  ContainerBanner,
+  Banner,
 } from './styles';
 
 export default function Home() {
@@ -21,7 +23,7 @@ export default function Home() {
       <FontLoader />
       <Main>
         <Hero>
-          <Logo src="./images/alura-logo.svg" alt='Logo Alura' />
+          <Logo src='./images/alura-logo.svg' alt='Logo Alura' />
           <LinkNext href='/contact'>
             <Content>
               <Badge>O que tem de novo?</Badge>
@@ -42,6 +44,9 @@ export default function Home() {
             </Form>
           </MainDescription>
         </Hero>
+        <ContainerBanner>
+          <Banner src='./images/alura-cases.png' alt='Banner Alura' />
+        </ContainerBanner>
       </Main>
     </ThemeProvider>
   );

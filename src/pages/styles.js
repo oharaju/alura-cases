@@ -100,3 +100,16 @@ export const Button = styled.button`
     opacity: 0.9;
   }
 `;
+
+export const ContainerBanner = styled.div`
+  margin-top: ${theme.spacing.xlarge}px;
+`;
+
+export const Banner = styled.img`
+  max-width: 100%;
+  height: auto;
+
+  ${media.md`
+    border-radius: ${theme.radii.small}px;
+  `}
+`;
