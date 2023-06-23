@@ -2,16 +2,29 @@ import { styled } from 'styled-components';
 import { theme } from '@gympass/yoga';
 import { media } from '@gympass/yoga-helpers';
 import colors from '../tokens/colors';
+import device from '../tokens/media';
 
-export const Main = styled.div`
+export const Main = styled.main`
   background-color: ${colors.clear};
   padding-top: ${theme.spacing.xxxlarge}px;
+
+  @media ${device.lg} {
+    display: flex;
+    overflow-x: hidden;
+  }
 `;
 
 export const Hero = styled.div`
-  padding-left: ${theme.spacing.large}px;
-  padding-right: ${theme.spacing.large}px;
+  padding: 0 ${theme.spacing.large}px;
   max-width: 768px;
+
+  ${media.md`
+    padding: 0 ${theme.spacing.xlarge}px;
+  `}
+
+  ${media.xl`
+    margin-left: 15rem;
+  `}
 `;
 
 export const Logo = styled.img`
@@ -103,13 +116,27 @@ export const Button = styled.button`
 
 export const ContainerBanner = styled.div`
   margin-top: ${theme.spacing.xlarge}px;
+
+  ${media.md`
+    padding: 0 ${theme.spacing.xlarge}px;
+  `}
+
+  @media ${device.lg} {
+    padding: 0;
+    margin: 60px 0;
+  }
 `;
 
 export const Banner = styled.img`
   max-width: 100%;
   height: auto;
+  box-shadow: 0 5px 16px 0px #11111173;
 
   ${media.md`
-    border-radius: ${theme.radii.small}px;
+    border-radius: ${theme.radii.regular}px;
   `}
+
+  @media ${device.lg} {
+    width: auto;
+  }
 `;
