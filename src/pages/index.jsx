@@ -1,6 +1,5 @@
 import { ThemeProvider, FontLoader, Text } from '@gympass/yoga';
 import LinkNext from '../components/NextLink';
-// eslint-disable-next-line import/named
 import {
   Main,
   Hero,
@@ -16,6 +15,7 @@ import {
   ContainerBanner,
   Banner,
 } from './styles';
+import Footer from '../components/Footer';
 
 export default function Home() {
   return (
@@ -48,6 +48,7 @@ export default function Home() {
           <Banner src='./images/alura-cases.png' alt='Banner Alura' />
         </ContainerBanner>
       </Main>
+      <Footer />
     </ThemeProvider>
   );
 }
