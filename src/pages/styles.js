@@ -6,7 +6,7 @@ import device from '../tokens/media';
 
 export const Main = styled.main`
   background-color: ${colors.clear};
-  padding-top: ${theme.spacing.xxxlarge}px;
+  padding: 119px 0;
 
   @media ${device.lg} {
     display: flex;
