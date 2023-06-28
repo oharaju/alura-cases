@@ -6,6 +6,7 @@ const colors = {
   neutral: '#cfbcf2',
   relax: '#724BB7',
   stamina: '#222222',
+  deep: '#9E9E9E',
 };
 
 export default colors;
