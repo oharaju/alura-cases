@@ -1,4 +1,5 @@
 import { ThemeProvider, FontLoader, Text } from '@gympass/yoga';
+import Head from 'next/head';
 import LinkNext from '../components/NextLink';
 import {
   Main,
@@ -21,6 +22,9 @@ export default function Home() {
   return (
     <ThemeProvider>
       <FontLoader />
+      <Head>
+        <title>Alura Cases</title>
+      </Head>
       <Main>
         <Hero>
           <Logo src='./images/alura-logo.svg' alt='Logo Alura' />
