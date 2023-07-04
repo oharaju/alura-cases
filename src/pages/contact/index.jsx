@@ -1,4 +1,4 @@
-import Head from 'next/head';
+import PageTitle from '../../components/PageTitle';
 import NextLink from '../../components/NextLink';
 import { Button } from './styles';
 
@@ -21,9 +21,7 @@ export async function getStaticProps() {
 export default function contact({ faq }) {
   return (
     <div>
-      <Head>
-        <title>FAQ - Alura Cases</title>
-      </Head>
+      <PageTitle>Faq - Alura Cases Campanha</PageTitle>
       <h1>Alura Cases - Página de Perguntas FAQ</h1>
       <NextLink href='/'>Ir para a Home</NextLink>
       <Button>Botão Vermelho</Button>
