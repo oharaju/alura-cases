@@ -1,9 +1,7 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
+module.exports = {
   experimental: {
     forceSwcTransforms: true,
   },
   reactStrictMode: true,
+  trailingSlash: true,
 };
-
-module.exports = nextConfig;
