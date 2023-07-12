@@ -16,6 +16,8 @@
     "import/no-unresolved": "off",
     "react/react-in-jsx-scope": "off",
     "jsx-quotes": "off",
-    "object-curly-newline": "off"
+    "object-curly-newline": "off",
+    "operator-linebreak": "off",
+    "react/jsx-one-expression-per-line": "off"
   }
 }
