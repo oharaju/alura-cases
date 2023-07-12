@@ -1,6 +1,7 @@
+import { ThemeProvider, FontLoader, Text } from '@gympass/yoga';
 import PageTitle from '../../components/PageTitle';
-import NextLink from '../../components/NextLink';
-import { Button } from './styles';
+import LinkNext from '../../components/NextLink';
+import { Title, Subtitle } from './styles';
 
 export async function getStaticProps() {
   const faqApiUrl =
@@ -12,7 +13,6 @@ export async function getStaticProps() {
 
   return {
     props: {
-      nome: 'Júlia',
       faq,
     },
   };
@@ -20,11 +20,18 @@ export async function getStaticProps() {
 
 export default function contact({ faq }) {
   return (
-    <div>
+    <ThemeProvider>
+      <FontLoader />
       <PageTitle>Faq - Alura Cases Campanha</PageTitle>
-      <h1>Alura Cases - Página de Perguntas FAQ</h1>
-      <NextLink href='/'>Ir para a Home</NextLink>
-      <Button>Botão Vermelho</Button>
+      <div>
+        <Title>FAQ: Perguntas Frequentes</Title>
+        <Subtitle>
+          Não consegue encontrar a resposta que procura? entre em contato com nosso{' '}
+          <LinkNext href='mailto:contato@alura.com.br'>time de suporte ao consumidor</LinkNext>
+        </Subtitle>
+        <LinkNext href='/'>Ir para a Home</LinkNext>
+      </div>
+
       <ul>
         {faq.map(({ question, answer }) => (
           <article>
@@ -33,6 +40,6 @@ export default function contact({ faq }) {
           </article>
         ))}
       </ul>
-    </div>
+    </ThemeProvider>
   );
 }
