@@ -1,8 +1,8 @@
 import { styled } from 'styled-components';
 import { theme } from '@gympass/yoga';
 import { media } from '@gympass/yoga-helpers';
-import colors from '../tokens/colors';
-import device from '../tokens/media';
+import colors from '../../../tokens/colors';
+import device from '../../../tokens/media';
 
 export const Main = styled.main`
   background-color: ${colors.clear};
@@ -27,7 +27,7 @@ export const Hero = styled.div`
   `}
 `;
 
-export const Logo = styled.img`
+export const LogoImg = styled.img`
   width: auto;
   height: 44px;
 `;
@@ -127,7 +127,7 @@ export const ContainerBanner = styled.div`
   }
 `;
 
-export const Banner = styled.img`
+export const BannerMain = styled.img`
   max-width: 100%;
   height: auto;
   box-shadow: 0 5px 16px 0px #11111173;

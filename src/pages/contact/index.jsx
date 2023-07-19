@@ -1,7 +1,13 @@
-import { ThemeProvider, FontLoader } from '@gympass/yoga';
-import PageTitle from '../../components/PageTitle';
-import LinkNext from '../../components/NextLink';
-import { Main, Title, Subtitle, ListQuestions, Questions, TitleQuestions } from './styles';
+import MainLayout from '@/components/Templates/MainLayout';
+import ContactPage from '@/components/Templates/ContactPage';
+
+export default function Contact({ faq }) {
+  return (
+    <MainLayout title='FAQ - Alura Cases' description='Descrição Faq'>
+      <ContactPage faq={faq} />
+    </MainLayout>
+  );
+}
 
 export async function getStaticProps() {
   const faqApiUrl =
@@ -16,35 +22,4 @@ export async function getStaticProps() {
       faq,
     },
   };
-}
-
-export default function contact({ faq }) {
-  return (
-    <ThemeProvider>
-      <FontLoader />
-      <PageTitle>Faq - Alura Cases Campanha</PageTitle>
-      <Main>
-        <div>
-          <Title>FAQ: Perguntas Frequentes</Title>
-          <Subtitle>
-            Não consegue encontrar a resposta que procura? entre em contato com nosso{' '}
-            <LinkNext href='mailto:contato@alura.com.br'>time de suporte ao consumidor</LinkNext>
-          </Subtitle>
-          <LinkNext href='/'>Voltar para a Home</LinkNext>
-        </div>
-        <ListQuestions>
-          <ul>
-            {faq.map(({ question, answer }) => (
-              <Questions>
-                <article>
-                  <TitleQuestions>{question}</TitleQuestions>
-                  <p>{answer}</p>
-                </article>
-              </Questions>
-            ))}
-          </ul>
-        </ListQuestions>
-      </Main>
-    </ThemeProvider>
-  );
 }

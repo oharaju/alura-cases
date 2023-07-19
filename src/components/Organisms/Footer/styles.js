@@ -1,6 +1,6 @@
 import { styled } from 'styled-components';
 import { theme } from '@gympass/yoga';
-import colors from '../../tokens/colors';
+import colors from '../../../tokens/colors';
 
 export const FooterBackground = styled.footer`
   background-color: ${colors.stamina};
