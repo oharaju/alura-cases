@@ -1,11 +1,26 @@
-import Head from 'next/head';
+import { NextSeo } from 'next-seo';
 
-function SEO({ description, title }) {
+function SEO({ title, description }) {
   return (
-    <Head>
-      <title>{title}</title>
-      <meta name='description' content={description} />
-    </Head>
+    <NextSeo
+      title={title}
+      description={description}
+      openGraph={{
+        type: 'website',
+        locale: 'pt-br',
+        url: 'https://alura-cases-f8e4rqdkp-oharaju.vercel.app/',
+        siteName: 'Alura Cases',
+        images: [
+          {
+            url: 'https://alura-cases-f8e4rqdkp-oharaju.vercel.app/images/alura-logo.svg',
+            width: 800,
+            height: 600,
+            alt: 'Logo Alura',
+            type: 'image/jpeg',
+          },
+        ],
+      }}
+    />
   );
 }
 
