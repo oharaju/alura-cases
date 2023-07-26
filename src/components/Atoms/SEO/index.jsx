@@ -16,7 +16,7 @@ function SEO({ title, description }) {
             width: 800,
             height: 600,
             alt: 'Logo Alura',
-            type: 'image/jpeg',
+            type: 'image/svg',
           },
         ],
       }}
