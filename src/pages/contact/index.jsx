@@ -3,7 +3,10 @@ import ContactPage from '@/components/Templates/ContactPage';
 
 export default function Contact({ faq }) {
   return (
-    <MainLayout title='FAQ - Alura Cases' description='Descrição Faq'>
+    <MainLayout
+      title='Perguntas Frequentes'
+      description='Quais descobertas as principais empresas de tecnologia enfrentam?'
+    >
       <ContactPage faq={faq} />
     </MainLayout>
   );
