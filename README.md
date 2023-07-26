@@ -1,38 +1,46 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Alura Cases 📚
 
-## Getting Started
+O projeto Alura Cases é uma aplicação web desenvolvida como parte de um curso da plataforma Alura, porém, passei um tempo aprimorando-o com algumas melhorias significativas. O objetivo principal foi aplicar os conhecimentos adquiridos no curso e aprofundar minha compreensão no React e em algumas tecnologias citadas logo abaixo.
 
-First, run the development server:
+## Tecnologias Utilizadas
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+[Next.js](https://nextjs.org/) : O Next.js foi a escolha ideal para este projeto devido à sua simplicidade e alto desempenho. Ele facilita a construção de aplicativos React com renderização do lado do servidor e fornece um ambiente de desenvolvimento amigável.
+
+[Vercel](https://vercel.com/) : 
+A Vercel foi utilizada para hospedar o projeto, permitindo um processo de deploy automático a partir do repositório Git e pré-renderização, o que resultou em uma experiência de usuário mais rápida e confiável, através da entrega de páginas estáticas pré-geradas. 
+
+[Styled Components](https://styled-components.com/) : Criei estilos para meus componentes de forma mais modular e encapsulada, o que torna o código mais organizado e reutilizável. 
+
+[Design System Yoga do Gympass](https://gympass.github.io/yoga/) : Biblioteca de componentes e estilos pré-definidos que me permitiu dar um aspecto visual mais consistente ao projeto.
+
+[ESLint](https://eslint.org/) : Utilizei o ESLint para garantir a qualidade e a consistência do código. Ele me permitiu aplicar regras de estilo e boas práticas de programação, detectar erros potenciais e evitar problemas comuns.
+
+[Prettier](https://prettier.io/) : O Prettier complementou o ESLint, formatando automaticamente o código, o que manteve a consistência em todo o projeto e economizou tempo durante o processo de desenvolvimento.
+
+[Atomic Design](https://atomicdesign.bradfrost.com/chapter-2/) : A Metodologia do Atomic Design é um conceito utilizado no desenvolvimento de interfaces, que se baseia na hierarquização dos componentes em cinco níveis distintos (Átomos, Moléculas, Organismos, Templates e Páginas), promovendo uma abordagem modular e reutilizável para a construção de interfaces coesas e consistentes.
+
+## ⚙️ Instalação
+
+Instale as dependências do Yarn utilizando o comando:
+
+```
+yarn install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Clone o repositório:
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+```
+git clone git@github.com:oharaju/alura-cases.git
+```
+    
+Entre na pasta do projeto:
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+```
+cd pokedex-react
+```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Para iniciar o projeto use o comando:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+```
+yarn dev
+```
